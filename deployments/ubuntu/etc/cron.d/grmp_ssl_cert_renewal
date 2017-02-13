@@ -1,0 +1,2 @@
+MAILTO="judeconnectionz@gmail.com"
+0 0 1 * * /var/letsencrypt/./letsencrypt-auto certonly -a webroot --webroot-path=/usr/share/nginx/html -d sbsc.serthe.com
