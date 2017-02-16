@@ -5,7 +5,6 @@ upstream grmp {
 
 ## https site##
 server {
-    listen      443 default_server;
     server_name grmp.serthe.com;
     root        /usr/share/nginx/html;
     index       index.html index.htm;
@@ -40,7 +39,7 @@ server {
         proxy_cache_valid 200 60m;
         proxy_buffering on;
         expires 864000;
-        proxy_pass http://odooerp;
+        proxy_pass http://grmp;
     }
 }
 
